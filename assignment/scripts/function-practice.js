@@ -58,7 +58,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 let myArray = ['chicken', 'music', 'movies', 'iced coffee'];
-function getLast( array ) {
+function getLast(){
   let lastElement = myArray.slice(-1);
   return lastElement;
 }
@@ -67,9 +67,22 @@ console.log(getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
+let theArray = ['Chai'];
+function find( value, theArray){
+  for(let i =0; i<theArray.length; i++){
+    if(value === theArray[i]){
+      return true;
+    }
+    
+    else{
+      return false;
+    }
+  }
   
-}
+
+  }// end of find function
+  console.log(find('Chai',theArray));
+
 
 // ----------------------
 // Stretch Goals
